@@ -48,13 +48,19 @@ class HelperTest {
 	
 	@Test
 	void testCambiarCombustible() {
-		fail("Not yet implemented");
+		String nuevoCombustible = "gasolina";
+		
+		Helper.cambiarCombustible(c1, nuevoCombustible);
+		assertEquals(nuevoCombustible, c1.getCombustible());
 	}
 
 	
 	@Test
 	void testCambiarPeso() {
-		fail("Not yet implemented");
+		int nuevoPeso = 123;
+		
+		Helper.cambiarPeso(m1, nuevoPeso);
+		assertEquals(nuevoPeso, m1.getPeso());
 	}
 
 }
